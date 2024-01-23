@@ -17,11 +17,31 @@
 }
 
 body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+  box-sizing: border-box;
+  
+}
+* {
+  font-family: Georgia;
+}
+/* Define scrollbar styles */
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+/* Track styles */
+::-webkit-scrollbar-track {
+  background-color: black; 
+  border-radius: 10px;
+}
+
+/* Handle (thumb) styles */
+::-webkit-scrollbar-thumb {
+  background-color: rgb(3, 138, 138); 
+  border-radius: 10px; 
+  border: 3px solid green; 
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background-color:  green; 
 }
