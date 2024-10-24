@@ -61,7 +61,7 @@ const Login = () => {
             <p className='text-[1.2rem] mb-2 mt-5'>Password:</p>
             <input placeholder='password' type='password' required value={password} onChange={(e) => {setPassword(e.target.value)}} className='border border-green-400 focus:scale-110 transition outline-none w-[100%] rounded-xl p-4 mb-4'/>
 
-            <button type='submit' className='block m-auto bg-green-400 p-3 rounded-[1rem] text-white w-[13rem] hover:scale-110 transition mb-4'>submit</button>
+            <button type='submit' onClick={handleSubmit} className='block m-auto bg-green-400 p-3 rounded-[1rem] text-white w-[13rem] hover:scale-110 transition mb-4'>submit</button>
         </form>
         <p className='text-center mb-3'>don't have an account ? <span className='hover:cursor-pointer text-green-400' onClick={() => {router.push('/register')}}>Create an account</span></p>
         </div>
